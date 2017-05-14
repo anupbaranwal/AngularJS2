@@ -1,0 +1,12 @@
+body {
+    min-height: 2000px;
+    padding-top: 70px;
+}
+.navbar-default .navbar-brand {
+    color: #fcf8e3;
+    font-size: -webkit-xxx-large;
+    font-family: cursive;
+}
+.navbar-default {
+    background-color: #134067;
+}

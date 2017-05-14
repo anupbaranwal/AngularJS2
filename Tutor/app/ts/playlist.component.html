@@ -1,0 +1,25 @@
+<div class="jumbotron">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <td>Serial number</td>
+                <td>Name</td>
+                <td>Description</td>
+                <td>Follow</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="#v of videos">
+                <td>{{v.id}}</td>
+                <td>{{v.name}}</td>
+                <td>{{v.desc}}</td>
+                <td><a href="#" (click)="showVideo(v.url)">{{v.name}}</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="jumbotron" *ngIf="toggleVideo">
+    <iframe width="560" height="315" src="{{url}}" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/-zW1zHqsdyc" frameborder="0" allowfullscreen>Click</iframe>-->

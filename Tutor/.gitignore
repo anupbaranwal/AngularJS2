@@ -1,0 +1,4 @@
+.idea
+node_modules
+app/js/*
+angular-2.iml
